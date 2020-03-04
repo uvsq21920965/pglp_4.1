@@ -103,7 +103,6 @@ public void printTest3() {
      		 .numeroDeTel(numerotel)
      		 .build();
 	cp.add(ps2);
-    System.out.println(cp.print());
 	String affiche="id Groupe :0  nom : saint prenom : pierre fonctions:web designer dateDeNaiss :1991-03-11 numero de telephone075";
     assertEquals(cp.print(),affiche);
 }
