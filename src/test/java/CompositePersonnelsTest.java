@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;
-
+import fr.uvsq21920965.pglp41.*;
 
 public class CompositePersonnelsTest {
 	/**
@@ -23,7 +23,7 @@ public class CompositePersonnelsTest {
 @Test 
 public void AddTest1() {
 	List<Integer>   numerotel;
-	 numerotel= new ArrayList<Integer>();
+	numerotel= new ArrayList<Integer>();
     numerotel.add(0); 
     numerotel.add(7);
     numerotel.add(5);
