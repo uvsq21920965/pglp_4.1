@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.0.1" sequence="0" timestamp="1583336539000" analysisTimestamp="1583336716420" release="">
+<BugCollection version="3.0.1" sequence="0" timestamp="1585521709000" analysisTimestamp="1585521876671" release="">
   <Project projectName="pglp4_4.1">
     <Jar>/home/oem/git/pglp_4.1/target/classes</Jar>
     <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/mojo/findbugs-maven-plugin/3.0.4/findbugs-maven-plugin-3.0.4.jar</AuxClasspathEntry>
@@ -73,38 +73,38 @@
     <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/oem/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar</AuxClasspathEntry>
   </Project>
-  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="338f61c39b406c69d85eeebdd6034468" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="b76ed53d0e7100fa0894d7ce1c85b102" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Method concatenates strings using + in a loop</ShortMessage>
-    <LongMessage>CompositePersonnels.print() concatenates strings using + in a loop</LongMessage>
-    <Class classname="CompositePersonnels" primary="true">
-      <SourceLine classname="CompositePersonnels" start="23" end="60" sourcefile="CompositePersonnels.java" sourcepath="CompositePersonnels.java">
-        <Message>At CompositePersonnels.java:[lines 23-60]</Message>
+    <LongMessage>fr.uvsq21920965.pglp41.CompositePersonnels.print() concatenates strings using + in a loop</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp41.CompositePersonnels" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp41.CompositePersonnels" start="24" end="61" sourcefile="CompositePersonnels.java" sourcepath="fr/uvsq21920965/pglp41/CompositePersonnels.java">
+        <Message>At CompositePersonnels.java:[lines 24-61]</Message>
       </SourceLine>
-      <Message>In class CompositePersonnels</Message>
+      <Message>In class fr.uvsq21920965.pglp41.CompositePersonnels</Message>
     </Class>
-    <Method classname="CompositePersonnels" name="print" signature="()Ljava/lang/String;" isStatic="false" primary="true">
-      <SourceLine classname="CompositePersonnels" start="56" end="60" startBytecode="0" endBytecode="193" sourcefile="CompositePersonnels.java" sourcepath="CompositePersonnels.java"/>
-      <Message>In method CompositePersonnels.print()</Message>
+    <Method classname="fr.uvsq21920965.pglp41.CompositePersonnels" name="print" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp41.CompositePersonnels" start="57" end="61" startBytecode="0" endBytecode="193" sourcefile="CompositePersonnels.java" sourcepath="fr/uvsq21920965/pglp41/CompositePersonnels.java"/>
+      <Message>In method fr.uvsq21920965.pglp41.CompositePersonnels.print()</Message>
     </Method>
-    <SourceLine classname="CompositePersonnels" primary="true" start="58" end="58" startBytecode="32" endBytecode="32" sourcefile="CompositePersonnels.java" sourcepath="CompositePersonnels.java">
-      <Message>At CompositePersonnels.java:[line 58]</Message>
+    <SourceLine classname="fr.uvsq21920965.pglp41.CompositePersonnels" primary="true" start="59" end="59" startBytecode="32" endBytecode="32" sourcefile="CompositePersonnels.java" sourcepath="fr/uvsq21920965/pglp41/CompositePersonnels.java">
+      <Message>At CompositePersonnels.java:[line 59]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="8b36dcb96f35cc1c33a4d2e5adf7b229" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="5c4d4a13b69fbfb06d68ef5d30df32e5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Method concatenates strings using + in a loop</ShortMessage>
-    <LongMessage>Personnels.print() concatenates strings using + in a loop</LongMessage>
-    <Class classname="Personnels" primary="true">
-      <SourceLine classname="Personnels" start="9" end="137" sourcefile="Personnels.java" sourcepath="Personnels.java">
-        <Message>At Personnels.java:[lines 9-137]</Message>
+    <LongMessage>fr.uvsq21920965.pglp41.Personnels.print() concatenates strings using + in a loop</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp41.Personnels" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp41.Personnels" start="10" end="138" sourcefile="Personnels.java" sourcepath="fr/uvsq21920965/pglp41/Personnels.java">
+        <Message>At Personnels.java:[lines 10-138]</Message>
       </SourceLine>
-      <Message>In class Personnels</Message>
+      <Message>In class fr.uvsq21920965.pglp41.Personnels</Message>
     </Class>
-    <Method classname="Personnels" name="print" signature="()Ljava/lang/String;" isStatic="false" primary="true">
-      <SourceLine classname="Personnels" start="133" end="137" startBytecode="0" endBytecode="222" sourcefile="Personnels.java" sourcepath="Personnels.java"/>
-      <Message>In method Personnels.print()</Message>
+    <Method classname="fr.uvsq21920965.pglp41.Personnels" name="print" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp41.Personnels" start="134" end="138" startBytecode="0" endBytecode="222" sourcefile="Personnels.java" sourcepath="fr/uvsq21920965/pglp41/Personnels.java"/>
+      <Message>In method fr.uvsq21920965.pglp41.Personnels.print()</Message>
     </Method>
-    <SourceLine classname="Personnels" primary="true" start="135" end="135" startBytecode="35" endBytecode="35" sourcefile="Personnels.java" sourcepath="Personnels.java">
-      <Message>At Personnels.java:[line 135]</Message>
+    <SourceLine classname="fr.uvsq21920965.pglp41.Personnels" primary="true" start="136" end="136" startBytecode="35" endBytecode="35" sourcefile="Personnels.java" sourcepath="fr/uvsq21920965/pglp41/Personnels.java">
+      <Message>At Personnels.java:[line 136]</Message>
     </SourceLine>
   </BugInstance>
   <BugCategory category="PERFORMANCE">
@@ -145,23 +145,41 @@ a StringBuffer (or StringBuilder in Java 1.5) explicitly.</p>
     <Description>String concatenation in loop using + operator</Description>
   </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Wed, 4 Mar 2020 16:42:19 +0100" total_classes="5" referenced_classes="20" total_bugs="2" total_size="89" num_packages="1" java_version="1.8.0_222" vm_version="25.222-b10" cpu_seconds="19.67" clock_seconds="22.09" peak_mbytes="113.64" alloc_mbytes="455.50" gc_seconds="0.39" priority_2="2">
-    <FileStats path="CompositePersonnels.java" bugCount="1" size="26" bugHash="8883b85194d72fe5540f38cfd9a7b556"/>
-    <FileStats path="Ipersonnels.java" bugCount="0" size="2"/>
-    <FileStats path="Personnels.java" bugCount="1" size="61" bugHash="20ccdc963d0736aa5319c94fd85654be"/>
-    <PackageStats package="" total_bugs="2" total_types="5" total_size="89" priority_2="2">
-      <ClassStats class="CompositePersonnels" sourceFile="CompositePersonnels.java" interface="false" size="26" bugs="1" priority_2="1"/>
-      <ClassStats class="Ipersonnels" sourceFile="Ipersonnels.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="Personnels" sourceFile="Personnels.java" interface="false" size="32" bugs="1" priority_2="1"/>
-      <ClassStats class="Personnels$1" sourceFile="Personnels.java" interface="false" size="1" bugs="0"/>
-      <ClassStats class="Personnels$Builder" sourceFile="Personnels.java" interface="false" size="28" bugs="0"/>
+  <FindBugsSummary timestamp="Mon, 30 Mar 2020 00:41:49 +0200" total_classes="8" referenced_classes="24" total_bugs="2" total_size="123" num_packages="1" java_version="1.8.0_222" vm_version="25.222-b10" cpu_seconds="10.17" clock_seconds="2.99" peak_mbytes="143.03" alloc_mbytes="455.50" gc_seconds="0.04" priority_2="2">
+    <FileStats path="fr/uvsq21920965/pglp41/AfficheIteratorGroupe.java" bugCount="0" size="31"/>
+    <FileStats path="fr/uvsq21920965/pglp41/CompositePersonnels.java" bugCount="1" size="26" bugHash="dacff4864e4dc8e44732c885c8c98313"/>
+    <FileStats path="fr/uvsq21920965/pglp41/Ipersonnels.java" bugCount="0" size="2"/>
+    <FileStats path="fr/uvsq21920965/pglp41/Iterator.java" bugCount="0" size="3"/>
+    <FileStats path="fr/uvsq21920965/pglp41/Personnels.java" bugCount="1" size="61" bugHash="01ee30fd939680deea6c4056dcc65bb7"/>
+    <PackageStats package="fr.uvsq21920965.pglp41" total_bugs="2" total_types="8" total_size="123" priority_2="2">
+      <ClassStats class="fr.uvsq21920965.pglp41.AfficheIteratorGroupe" sourceFile="AfficheIteratorGroupe.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.AfficheIteratorGroupe$IpersonnelsIteratorGroupe" sourceFile="AfficheIteratorGroupe.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.CompositePersonnels" sourceFile="CompositePersonnels.java" interface="false" size="26" bugs="1" priority_2="1"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.Ipersonnels" sourceFile="Ipersonnels.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.Iterator" sourceFile="Iterator.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.Personnels" sourceFile="Personnels.java" interface="false" size="32" bugs="1" priority_2="1"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.Personnels$1" sourceFile="Personnels.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.Personnels$Builder" sourceFile="Personnels.java" interface="false" size="28" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="5668" invocations="401" avgMicrosecondsPerInvocation="14136" maxMicrosecondsPerInvocation="382396" standardDeviationMircosecondsPerInvocation="41282"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1373" invocations="400" avgMicrosecondsPerInvocation="3432" maxMicrosecondsPerInvocation="499594" standardDeviationMircosecondsPerInvocation="29489"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="469" invocations="20" avgMicrosecondsPerInvocation="23466" maxMicrosecondsPerInvocation="305574" standardDeviationMircosecondsPerInvocation="65639"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="426" invocations="23" avgMicrosecondsPerInvocation="18553" maxMicrosecondsPerInvocation="241894" standardDeviationMircosecondsPerInvocation="58629"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="258" invocations="20" avgMicrosecondsPerInvocation="12906" maxMicrosecondsPerInvocation="232912" standardDeviationMircosecondsPerInvocation="50488"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="505" invocations="404" avgMicrosecondsPerInvocation="1252" maxMicrosecondsPerInvocation="24744" standardDeviationMircosecondsPerInvocation="2884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="134" invocations="24" avgMicrosecondsPerInvocation="5622" maxMicrosecondsPerInvocation="22829" standardDeviationMircosecondsPerInvocation="6868"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="129" invocations="405" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="3549" standardDeviationMircosecondsPerInvocation="242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="86" invocations="32" avgMicrosecondsPerInvocation="2691" maxMicrosecondsPerInvocation="78042" standardDeviationMircosecondsPerInvocation="13537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="85" invocations="372" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="5147" standardDeviationMircosecondsPerInvocation="453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="79" invocations="104" avgMicrosecondsPerInvocation="760" maxMicrosecondsPerInvocation="5150" standardDeviationMircosecondsPerInvocation="884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="77" invocations="24" avgMicrosecondsPerInvocation="3234" maxMicrosecondsPerInvocation="12225" standardDeviationMircosecondsPerInvocation="3402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="56" invocations="50" avgMicrosecondsPerInvocation="1128" maxMicrosecondsPerInvocation="24281" standardDeviationMircosecondsPerInvocation="3524"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="56" invocations="29" avgMicrosecondsPerInvocation="1943" maxMicrosecondsPerInvocation="20918" standardDeviationMircosecondsPerInvocation="4341"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="54" invocations="29" avgMicrosecondsPerInvocation="1880" maxMicrosecondsPerInvocation="14999" standardDeviationMircosecondsPerInvocation="3682"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="53" invocations="29" avgMicrosecondsPerInvocation="1843" maxMicrosecondsPerInvocation="21129" standardDeviationMircosecondsPerInvocation="4117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="50" invocations="24" avgMicrosecondsPerInvocation="2100" maxMicrosecondsPerInvocation="11028" standardDeviationMircosecondsPerInvocation="2766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="45" invocations="24" avgMicrosecondsPerInvocation="1875" maxMicrosecondsPerInvocation="9393" standardDeviationMircosecondsPerInvocation="2671"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="42" invocations="29" avgMicrosecondsPerInvocation="1459" maxMicrosecondsPerInvocation="11089" standardDeviationMircosecondsPerInvocation="2624"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="41" invocations="29" avgMicrosecondsPerInvocation="1442" maxMicrosecondsPerInvocation="23258" standardDeviationMircosecondsPerInvocation="4190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="40" invocations="24" avgMicrosecondsPerInvocation="1691" maxMicrosecondsPerInvocation="14791" standardDeviationMircosecondsPerInvocation="3122"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="34" invocations="24" avgMicrosecondsPerInvocation="1448" maxMicrosecondsPerInvocation="6275" standardDeviationMircosecondsPerInvocation="1776"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="31" invocations="29" avgMicrosecondsPerInvocation="1083" maxMicrosecondsPerInvocation="5137" standardDeviationMircosecondsPerInvocation="1272"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

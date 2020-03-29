@@ -16,6 +16,8 @@
 'UTF-8'
 -doctitle
 'pglp4_4.1 0.0.1-SNAPSHOT Test API'
+-link
+'../apidocs'
 -linkoffline
 'http://download.oracle.com/javase/6/docs/api' '/home/oem/git/pglp_4.1/target/javadoc-bundle-options'
 -use
