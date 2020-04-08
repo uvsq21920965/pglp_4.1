@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.0.1" sequence="0" timestamp="1585521709000" analysisTimestamp="1585521876671" release="">
+<BugCollection version="3.0.1" sequence="0" timestamp="1586385121000" analysisTimestamp="1586385139269" release="">
   <Project projectName="pglp4_4.1">
     <Jar>/home/oem/git/pglp_4.1/target/classes</Jar>
     <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/mojo/findbugs-maven-plugin/3.0.4/findbugs-maven-plugin-3.0.4.jar</AuxClasspathEntry>
@@ -77,34 +77,34 @@
     <ShortMessage>Method concatenates strings using + in a loop</ShortMessage>
     <LongMessage>fr.uvsq21920965.pglp41.CompositePersonnels.print() concatenates strings using + in a loop</LongMessage>
     <Class classname="fr.uvsq21920965.pglp41.CompositePersonnels" primary="true">
-      <SourceLine classname="fr.uvsq21920965.pglp41.CompositePersonnels" start="24" end="61" sourcefile="CompositePersonnels.java" sourcepath="fr/uvsq21920965/pglp41/CompositePersonnels.java">
-        <Message>At CompositePersonnels.java:[lines 24-61]</Message>
+      <SourceLine classname="fr.uvsq21920965.pglp41.CompositePersonnels" start="24" end="58" sourcefile="CompositePersonnels.java" sourcepath="fr/uvsq21920965/pglp41/CompositePersonnels.java">
+        <Message>At CompositePersonnels.java:[lines 24-58]</Message>
       </SourceLine>
       <Message>In class fr.uvsq21920965.pglp41.CompositePersonnels</Message>
     </Class>
     <Method classname="fr.uvsq21920965.pglp41.CompositePersonnels" name="print" signature="()Ljava/lang/String;" isStatic="false" primary="true">
-      <SourceLine classname="fr.uvsq21920965.pglp41.CompositePersonnels" start="57" end="61" startBytecode="0" endBytecode="193" sourcefile="CompositePersonnels.java" sourcepath="fr/uvsq21920965/pglp41/CompositePersonnels.java"/>
+      <SourceLine classname="fr.uvsq21920965.pglp41.CompositePersonnels" start="54" end="58" startBytecode="0" endBytecode="193" sourcefile="CompositePersonnels.java" sourcepath="fr/uvsq21920965/pglp41/CompositePersonnels.java"/>
       <Message>In method fr.uvsq21920965.pglp41.CompositePersonnels.print()</Message>
     </Method>
-    <SourceLine classname="fr.uvsq21920965.pglp41.CompositePersonnels" primary="true" start="59" end="59" startBytecode="32" endBytecode="32" sourcefile="CompositePersonnels.java" sourcepath="fr/uvsq21920965/pglp41/CompositePersonnels.java">
-      <Message>At CompositePersonnels.java:[line 59]</Message>
+    <SourceLine classname="fr.uvsq21920965.pglp41.CompositePersonnels" primary="true" start="56" end="56" startBytecode="32" endBytecode="32" sourcefile="CompositePersonnels.java" sourcepath="fr/uvsq21920965/pglp41/CompositePersonnels.java">
+      <Message>At CompositePersonnels.java:[line 56]</Message>
     </SourceLine>
   </BugInstance>
   <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="5c4d4a13b69fbfb06d68ef5d30df32e5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Method concatenates strings using + in a loop</ShortMessage>
     <LongMessage>fr.uvsq21920965.pglp41.Personnels.print() concatenates strings using + in a loop</LongMessage>
     <Class classname="fr.uvsq21920965.pglp41.Personnels" primary="true">
-      <SourceLine classname="fr.uvsq21920965.pglp41.Personnels" start="10" end="138" sourcefile="Personnels.java" sourcepath="fr/uvsq21920965/pglp41/Personnels.java">
-        <Message>At Personnels.java:[lines 10-138]</Message>
+      <SourceLine classname="fr.uvsq21920965.pglp41.Personnels" start="10" end="158" sourcefile="Personnels.java" sourcepath="fr/uvsq21920965/pglp41/Personnels.java">
+        <Message>At Personnels.java:[lines 10-158]</Message>
       </SourceLine>
       <Message>In class fr.uvsq21920965.pglp41.Personnels</Message>
     </Class>
     <Method classname="fr.uvsq21920965.pglp41.Personnels" name="print" signature="()Ljava/lang/String;" isStatic="false" primary="true">
-      <SourceLine classname="fr.uvsq21920965.pglp41.Personnels" start="134" end="138" startBytecode="0" endBytecode="222" sourcefile="Personnels.java" sourcepath="fr/uvsq21920965/pglp41/Personnels.java"/>
+      <SourceLine classname="fr.uvsq21920965.pglp41.Personnels" start="154" end="158" startBytecode="0" endBytecode="222" sourcefile="Personnels.java" sourcepath="fr/uvsq21920965/pglp41/Personnels.java"/>
       <Message>In method fr.uvsq21920965.pglp41.Personnels.print()</Message>
     </Method>
-    <SourceLine classname="fr.uvsq21920965.pglp41.Personnels" primary="true" start="136" end="136" startBytecode="35" endBytecode="35" sourcefile="Personnels.java" sourcepath="fr/uvsq21920965/pglp41/Personnels.java">
-      <Message>At Personnels.java:[line 136]</Message>
+    <SourceLine classname="fr.uvsq21920965.pglp41.Personnels" primary="true" start="156" end="156" startBytecode="35" endBytecode="35" sourcefile="Personnels.java" sourcepath="fr/uvsq21920965/pglp41/Personnels.java">
+      <Message>At Personnels.java:[line 156]</Message>
     </SourceLine>
   </BugInstance>
   <BugCategory category="PERFORMANCE">
@@ -145,41 +145,39 @@ a StringBuffer (or StringBuilder in Java 1.5) explicitly.</p>
     <Description>String concatenation in loop using + operator</Description>
   </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Mon, 30 Mar 2020 00:41:49 +0200" total_classes="8" referenced_classes="24" total_bugs="2" total_size="123" num_packages="1" java_version="1.8.0_222" vm_version="25.222-b10" cpu_seconds="10.17" clock_seconds="2.99" peak_mbytes="143.03" alloc_mbytes="455.50" gc_seconds="0.04" priority_2="2">
-    <FileStats path="fr/uvsq21920965/pglp41/AfficheIteratorGroupe.java" bugCount="0" size="31"/>
-    <FileStats path="fr/uvsq21920965/pglp41/CompositePersonnels.java" bugCount="1" size="26" bugHash="dacff4864e4dc8e44732c885c8c98313"/>
+  <FindBugsSummary timestamp="Thu, 9 Apr 2020 00:32:01 +0200" total_classes="9" referenced_classes="25" total_bugs="2" total_size="125" num_packages="1" java_version="1.8.0_222" vm_version="25.222-b10" cpu_seconds="13.53" clock_seconds="5.91" peak_mbytes="110.59" alloc_mbytes="455.50" gc_seconds="0.07" priority_2="2">
+    <FileStats path="fr/uvsq21920965/pglp41/AfficheIteratorGroupe.java" bugCount="0" size="34"/>
+    <FileStats path="fr/uvsq21920965/pglp41/CompositePersonnels.java" bugCount="1" size="24" bugHash="80537a51169cfa15a110a669b872543a"/>
     <FileStats path="fr/uvsq21920965/pglp41/Ipersonnels.java" bugCount="0" size="2"/>
     <FileStats path="fr/uvsq21920965/pglp41/Iterator.java" bugCount="0" size="3"/>
-    <FileStats path="fr/uvsq21920965/pglp41/Personnels.java" bugCount="1" size="61" bugHash="01ee30fd939680deea6c4056dcc65bb7"/>
-    <PackageStats package="fr.uvsq21920965.pglp41" total_bugs="2" total_types="8" total_size="123" priority_2="2">
+    <FileStats path="fr/uvsq21920965/pglp41/Personnels.java" bugCount="1" size="61" bugHash="193b6d248c85e81a088e8d7f778d0537"/>
+    <FileStats path="fr/uvsq21920965/pglp41/package-info.java" bugCount="0" size="1"/>
+    <PackageStats package="fr.uvsq21920965.pglp41" total_bugs="2" total_types="9" total_size="125" priority_2="2">
       <ClassStats class="fr.uvsq21920965.pglp41.AfficheIteratorGroupe" sourceFile="AfficheIteratorGroupe.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="fr.uvsq21920965.pglp41.AfficheIteratorGroupe$IpersonnelsIteratorGroupe" sourceFile="AfficheIteratorGroupe.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="fr.uvsq21920965.pglp41.CompositePersonnels" sourceFile="CompositePersonnels.java" interface="false" size="26" bugs="1" priority_2="1"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.AfficheIteratorGroupe$IpersonnelsIteratorGroupe" sourceFile="AfficheIteratorGroupe.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.CompositePersonnels" sourceFile="CompositePersonnels.java" interface="false" size="24" bugs="1" priority_2="1"/>
       <ClassStats class="fr.uvsq21920965.pglp41.Ipersonnels" sourceFile="Ipersonnels.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="fr.uvsq21920965.pglp41.Iterator" sourceFile="Iterator.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="fr.uvsq21920965.pglp41.Personnels" sourceFile="Personnels.java" interface="false" size="32" bugs="1" priority_2="1"/>
       <ClassStats class="fr.uvsq21920965.pglp41.Personnels$1" sourceFile="Personnels.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="fr.uvsq21920965.pglp41.Personnels$Builder" sourceFile="Personnels.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp41.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="505" invocations="404" avgMicrosecondsPerInvocation="1252" maxMicrosecondsPerInvocation="24744" standardDeviationMircosecondsPerInvocation="2884"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="134" invocations="24" avgMicrosecondsPerInvocation="5622" maxMicrosecondsPerInvocation="22829" standardDeviationMircosecondsPerInvocation="6868"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="129" invocations="405" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="3549" standardDeviationMircosecondsPerInvocation="242"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="86" invocations="32" avgMicrosecondsPerInvocation="2691" maxMicrosecondsPerInvocation="78042" standardDeviationMircosecondsPerInvocation="13537"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="85" invocations="372" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="5147" standardDeviationMircosecondsPerInvocation="453"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="79" invocations="104" avgMicrosecondsPerInvocation="760" maxMicrosecondsPerInvocation="5150" standardDeviationMircosecondsPerInvocation="884"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="77" invocations="24" avgMicrosecondsPerInvocation="3234" maxMicrosecondsPerInvocation="12225" standardDeviationMircosecondsPerInvocation="3402"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="56" invocations="50" avgMicrosecondsPerInvocation="1128" maxMicrosecondsPerInvocation="24281" standardDeviationMircosecondsPerInvocation="3524"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="56" invocations="29" avgMicrosecondsPerInvocation="1943" maxMicrosecondsPerInvocation="20918" standardDeviationMircosecondsPerInvocation="4341"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="54" invocations="29" avgMicrosecondsPerInvocation="1880" maxMicrosecondsPerInvocation="14999" standardDeviationMircosecondsPerInvocation="3682"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="53" invocations="29" avgMicrosecondsPerInvocation="1843" maxMicrosecondsPerInvocation="21129" standardDeviationMircosecondsPerInvocation="4117"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="50" invocations="24" avgMicrosecondsPerInvocation="2100" maxMicrosecondsPerInvocation="11028" standardDeviationMircosecondsPerInvocation="2766"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="45" invocations="24" avgMicrosecondsPerInvocation="1875" maxMicrosecondsPerInvocation="9393" standardDeviationMircosecondsPerInvocation="2671"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="42" invocations="29" avgMicrosecondsPerInvocation="1459" maxMicrosecondsPerInvocation="11089" standardDeviationMircosecondsPerInvocation="2624"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="41" invocations="29" avgMicrosecondsPerInvocation="1442" maxMicrosecondsPerInvocation="23258" standardDeviationMircosecondsPerInvocation="4190"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="40" invocations="24" avgMicrosecondsPerInvocation="1691" maxMicrosecondsPerInvocation="14791" standardDeviationMircosecondsPerInvocation="3122"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="34" invocations="24" avgMicrosecondsPerInvocation="1448" maxMicrosecondsPerInvocation="6275" standardDeviationMircosecondsPerInvocation="1776"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="31" invocations="29" avgMicrosecondsPerInvocation="1083" maxMicrosecondsPerInvocation="5137" standardDeviationMircosecondsPerInvocation="1272"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="795" invocations="405" avgMicrosecondsPerInvocation="1964" maxMicrosecondsPerInvocation="133540" standardDeviationMircosecondsPerInvocation="9385"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="740" invocations="404" avgMicrosecondsPerInvocation="1832" maxMicrosecondsPerInvocation="64217" standardDeviationMircosecondsPerInvocation="4610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="180" invocations="25" avgMicrosecondsPerInvocation="7214" maxMicrosecondsPerInvocation="36480" standardDeviationMircosecondsPerInvocation="9955"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="135" invocations="372" avgMicrosecondsPerInvocation="363" maxMicrosecondsPerInvocation="15703" standardDeviationMircosecondsPerInvocation="1207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="109" invocations="103" avgMicrosecondsPerInvocation="1063" maxMicrosecondsPerInvocation="11318" standardDeviationMircosecondsPerInvocation="1590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="107" invocations="31" avgMicrosecondsPerInvocation="3451" maxMicrosecondsPerInvocation="91815" standardDeviationMircosecondsPerInvocation="16171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="102" invocations="25" avgMicrosecondsPerInvocation="4115" maxMicrosecondsPerInvocation="21086" standardDeviationMircosecondsPerInvocation="5871"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="97" invocations="48" avgMicrosecondsPerInvocation="2022" maxMicrosecondsPerInvocation="56318" standardDeviationMircosecondsPerInvocation="8112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="94" invocations="28" avgMicrosecondsPerInvocation="3362" maxMicrosecondsPerInvocation="31457" standardDeviationMircosecondsPerInvocation="7281"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="87" invocations="28" avgMicrosecondsPerInvocation="3126" maxMicrosecondsPerInvocation="16456" standardDeviationMircosecondsPerInvocation="4673"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="84" invocations="28" avgMicrosecondsPerInvocation="3017" maxMicrosecondsPerInvocation="27444" standardDeviationMircosecondsPerInvocation="6337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="79" invocations="28" avgMicrosecondsPerInvocation="2851" maxMicrosecondsPerInvocation="20883" standardDeviationMircosecondsPerInvocation="5622"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="78" invocations="25" avgMicrosecondsPerInvocation="3127" maxMicrosecondsPerInvocation="21863" standardDeviationMircosecondsPerInvocation="5532"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="74" invocations="28" avgMicrosecondsPerInvocation="2665" maxMicrosecondsPerInvocation="45463" standardDeviationMircosecondsPerInvocation="8341"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

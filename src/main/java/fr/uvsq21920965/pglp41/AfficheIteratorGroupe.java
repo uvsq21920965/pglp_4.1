@@ -9,42 +9,76 @@ import java.util.List;
  *
  */
 public class AfficheIteratorGroupe {
+  /**
+   * liste des Ipersonnels.
+   */
+  private List<Ipersonnels> personnes;
 
-	private List<Ipersonnels> personnes;
+  /**
+   * Constructeur.
+   * @param root .
+   */
+
 	public AfficheIteratorGroupe(Ipersonnels root){
 		personnes = new ArrayList<Ipersonnels>();
 	    personnes.add(root);
 	}
 
-	 public Iterator getIterator() {
-		 return new IpersonnelsIteratorGroupe(); 
-	 }
+  /**
+   * creer un iterateurde type Ipersonnel.
+   * @return Iterator.
+   */
+  public Iterator getIterator() {
+    return new IpersonnelsIteratorGroupe(); 
+  }
 
-	private class IpersonnelsIteratorGroupe implements Iterator{
-		IpersonnelsIteratorGroupe(){
-		 int verifie=0;
-		 while(verifie<personnes.size()) {
-		 if(personnes.get(verifie) instanceof CompositePersonnels) {
-		    personnes.add((Ipersonnels) ((CompositePersonnels)personnes.get(verifie)).getPersonnes());
-		 }
-		 verifie ++;
-		 }
-		}
+  /**
+   * Classe IpersonnelsIteratorGroupe.
+   * @author Sarra Belmahdi.
+   *
+   */
+  private class IpersonnelsIteratorGroupe implements Iterator{
 
-		int index=0;
-		public Boolean hasNext() {
-			if(index<personnes.size()) {
-				return true;	
-			}
-			return false;
-		}
+    /**
+     * construceur.
+     */
+    IpersonnelsIteratorGroupe(){
+      int verifie=0;
+      while(verifie<personnes.size()) {
+        if(personnes.get(verifie) instanceof CompositePersonnels) {
+          CompositePersonnels cp=(CompositePersonnels)personnes.get(verifie);
+          for (Ipersonnels p : cp.getPersonnes()) {
+            personnes.add(p);
+          }
+        }
+        verifie ++;
+      }
+    }
+    /**
+     * indice d'indexation.
+     */
+    int index=0;
 
-		public Ipersonnels next() {
-			if(this.hasNext()) {
-				return personnes.get(index++);
-			}
-			return null;
-		}
-	}
+    /**
+     * methode pour conaitre si y a encore des elmenets ou non. 
+     * @return true si y a encore d'elements dans l'itiration sinon False.
+     */
+    public Boolean hasNext() {
+      if(index<personnes.size()) {
+        return true;	
+      }
+      return false;
+    }
 
+    /**
+     * methode pour retourner l'element.
+     * @return element suivant dans l'itiration.
+     */
+    public Ipersonnels next() {
+      if(this.hasNext()) {
+        return personnes.get(index++);
+      }
+      return null;
+    }
+  }
 }

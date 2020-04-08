@@ -43,9 +43,6 @@ public class CompositePersonnels implements Ipersonnels{
 		else 
 			System.out.println("element non trouve");
 	}
-	public int getId() {
-		return id;
-	}
 
 	public List<Ipersonnels> getPersonnes() {
 		return personnes;
@@ -54,13 +51,10 @@ public class CompositePersonnels implements Ipersonnels{
 	 * affiche les cordonnees de tous les personnels du groupe.
 	 */
 	public String print() {
-	 String affiche="";
-	 for(Ipersonnels per : personnes) {
-		 affiche += " "+per.print();
+	  String affiche="";
+	  for(Ipersonnels per : personnes) {
+		affiche += " "+per.print();
+	  }
+	  return "id Groupe :"+id+" "+affiche;
 	}
-	 return "id Groupe :"+id+" "+affiche;
-	}
-
-	
-
 }

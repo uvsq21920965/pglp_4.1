@@ -106,23 +106,43 @@ public static class Builder {
 		fonctions = build.fonctions;
 		dateDeNaiss = build.dateDeNaiss;
 		numeroDeTel = build.numeroDeTel;
-	
-	}
+    }
+	/**
+	 * methode pour retourner nom.
+	 * @return nom.
+	 */
 	public String getNom() {
 		return nom;
 	}
+
+	/**
+	 * mehode pour retourner prenom.
+	 * @return prenom.
+	 */
 	public String getPrenom() {
 		return prenom;
 	}
 
+	/**
+	 * methode pour retourner fonction.
+	 * @return fonction.
+	 */
 	public String getFonctions() {
 		return fonctions;
 	}
 
+	/**
+	 * methode pour retourner la date de naissance.
+	 * @return date de naissance.
+	 */
 	public LocalDate getDateDeNaiss() {
 		return dateDeNaiss;
 	}
 
+	/**
+	 * methode pour retourner le numero de telephone.
+	 * @return nemero de telephone.
+	 */
 	public List<Integer> getNumeroDeTel() {
 		return numeroDeTel;
 	}
@@ -131,14 +151,11 @@ public static class Builder {
 	 * methode print les cordonnees du personnel.
 	 */
 	public String print() {
-	 String numtel="";
-	 for(int num:this.numeroDeTel) {
-		 numtel+=num;
-	 }
-	 return "nom : "+this.nom+" "+"prenom : "+this.prenom+" "+"fonctions:"+this.fonctions
-			 +" "+"dateDeNaiss :"+this.dateDeNaiss+" "+"numero de telephone"+numtel;
-		
+	  String numtel="";
+	  for(int num:this.numeroDeTel) {
+		numtel+=num;
+	  }
+	  return "nom : "+this.nom+" "+"prenom : "+this.prenom+" "+"fonctions:"+this.fonctions
+	    +" "+"dateDeNaiss :"+this.dateDeNaiss+" "+"numero de telephone"+numtel;
 	}
-
-
 }
