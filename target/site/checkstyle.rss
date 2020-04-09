@@ -25,9 +25,9 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 5,
+      <title>File: 1,
              Errors: 0,
-             Warnings: 344,
+             Warnings: 0,
              Infos: 0
       </title>
             <link>${project.url}/checkstyle.html</link>
@@ -52,63 +52,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  211
-                </td>
-                <td>
                   0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp41.package-info.java">fr/uvsq21920965/pglp41/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp41.AfficheIteratorGroupe.java">fr/uvsq21920965/pglp41/AfficheIteratorGroupe.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  30
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp41.Ipersonnels.java">fr/uvsq21920965/pglp41/Ipersonnels.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  5
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp41.CompositePersonnels.java">fr/uvsq21920965/pglp41/CompositePersonnels.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  98
                 </td>
                 <td>
                   0

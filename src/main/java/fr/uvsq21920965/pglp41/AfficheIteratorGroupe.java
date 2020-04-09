@@ -1,4 +1,5 @@
 package fr.uvsq21920965.pglp41;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,10 +20,10 @@ public class AfficheIteratorGroupe {
    * @param root .
    */
 
-	public AfficheIteratorGroupe(Ipersonnels root){
-		personnes = new ArrayList<Ipersonnels>();
-	    personnes.add(root);
-	}
+  public AfficheIteratorGroupe(Ipersonnels root) {
+    personnes = new ArrayList<Ipersonnels>();
+    personnes.add(root);
+  }
 
   /**
    * creer un iterateurde type Ipersonnel.
@@ -37,35 +38,36 @@ public class AfficheIteratorGroupe {
    * @author Sarra Belmahdi.
    *
    */
-  private class IpersonnelsIteratorGroupe implements Iterator{
+  private class IpersonnelsIteratorGroupe implements Iterator {
 
     /**
      * construceur.
      */
-    IpersonnelsIteratorGroupe(){
-      int verifie=0;
-      while(verifie<personnes.size()) {
-        if(personnes.get(verifie) instanceof CompositePersonnels) {
-          CompositePersonnels cp=(CompositePersonnels)personnes.get(verifie);
+    IpersonnelsIteratorGroupe() {
+      int verifie = 0;
+      while (verifie < personnes.size()) {
+        if (personnes.get(verifie) instanceof CompositePersonnels) {
+          CompositePersonnels cp = (CompositePersonnels)personnes.get(verifie);
           for (Ipersonnels p : cp.getPersonnes()) {
             personnes.add(p);
           }
         }
-        verifie ++;
+        verifie++;
       }
     }
+
     /**
      * indice d'indexation.
      */
-    int index=0;
+    int index = 0;
 
     /**
      * methode pour conaitre si y a encore des elmenets ou non. 
      * @return true si y a encore d'elements dans l'itiration sinon False.
      */
     public Boolean hasNext() {
-      if(index<personnes.size()) {
-        return true;	
+      if (index < personnes.size()) {
+        return true;
       }
       return false;
     }
@@ -75,7 +77,7 @@ public class AfficheIteratorGroupe {
      * @return element suivant dans l'itiration.
      */
     public Ipersonnels next() {
-      if(this.hasNext()) {
+      if (this.hasNext()) {
         return personnes.get(index++);
       }
       return null;
